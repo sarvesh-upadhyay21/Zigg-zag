@@ -1,0 +1,85 @@
+import React from 'react';
+import { Form, Row, Col, Button, Table, InputGroup } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const VendorDetailForm = () => {
+  return (
+    <Form className="p-4">
+      <h2>Vendor Detail</h2>
+      
+      <Row className="mb-3">
+        <Col md={6}>
+          <h5>Vendor Detail</h5>
+          <p><strong>Vendor Name:</strong> MOMAGIC TECHNOLOGIES PVT LTD</p>
+          <p>(VEN0853) MOMAGIC TECHNOLOGIES PVT LTD</p>
+          <p><strong>Vendor Address:</strong> 206, FF, PLOT NO. 190-191, NEELKANTH PALACE, DELHI</p>
+          <p><strong>Vendor GSTIN:</strong> 07AAHCM0426E1ZV</p>
+        </Col>
+        <Col md={6}>
+          <h5>Tax Detail</h5>
+          <p><strong>Sub-Total value before Taxes:</strong> 0.00</p>
+          <p><strong>CGST:</strong> (+) 0.00</p>
+          <p><strong>SGST:</strong> (+) 0.00</p>
+          <p><strong>IGST:</strong> (+) 0.00</p>
+          <p><strong>Sub-Total values after Taxes:</strong> 0.00</p>
+        </Col>
+      </Row>
+
+      <h4>Component Details</h4>
+      <Table bordered>
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Ord. Qty</th>
+            <th>Rate</th>
+            <th>Rate Cap</th>
+            <th>Tol Price</th>
+            <th>Proj. Req. Qty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <Form.Control as="select">
+                <option>(0805-5.6K-5%-0.125W-SMD-Resistor) P0000</option>
+                <option>(Air Bubble Roll (100 m)) P0083</option>
+                <option>(Plastic Casing Mini UPS_D-LINK LOGO (Pad Printed)) P2460</option>
+                <option>(Screw 22mm) P3333</option>
+              </Form.Control>
+            </td>
+            <td>
+              <Form.Control type="number" defaultValue="1" />
+            </td>
+            <td>
+              <InputGroup>
+                <Form.Control type="number" defaultValue="0" />
+                <InputGroup.Append>
+                  <InputGroup.Text>₹</InputGroup.Text>
+                </InputGroup.Append>
+              </InputGroup>
+            </td>
+            <td>
+              <Form.Control type="number" defaultValue="0" />
+            </td>
+            <td>
+              <Form.Control type="number" defaultValue="0.00" />
+            </td>
+            <td>
+              <Form.Control type="number" defaultValue="0" />
+            </td>
+          </tr>
+        </tbody>
+      </Table>
+
+      <Row className="mb-3">
+        <Col className="text-right">
+          <Button variant="secondary" className="mr-2">Reset</Button>
+          <Button variant="secondary" className="mr-2">Back</Button>
+          <Button variant="primary">Submit</Button>
+        </Col>
+      </Row>
+    </Form>
+  );
+}
+
+export default VendorDetailForm;

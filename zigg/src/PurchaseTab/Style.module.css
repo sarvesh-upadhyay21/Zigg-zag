@@ -1,0 +1,203 @@
+.filterbtn {
+  position: relative;
+}
+
+.overlay {
+  background-color: #ffffff;
+  width: 200%;
+  padding: 6px 0;
+  z-index: 1;
+  color: #5c687a !important;
+  border: 1px solid #e8e9ef;
+  border-radius: 9px;
+  position: absolute;
+  top: 120%;
+  right: 0;
+}
+
+.labelsHeading {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 100 !important;
+  line-height: 16px;
+  letter-spacing: 0.012em;
+  text-align: left;
+  color: #9699a7;
+}
+
+.name_head {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  color: #5c687a;
+  line-height: 28px;
+}
+
+.sec_head {
+  font-size: 16px;
+  color: #5c687a;
+  font-family: "Inter", sans-serif;
+}
+
+.th_head {
+  font-family: "Inter", sans-serif;
+  color: #9699a7;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.activeBtnn,
+.viewActive {
+  width: auto;
+  padding: 5px 18px;
+  border: none;
+  color: #50ad97;
+  cursor: pointer;
+  border-radius: 8px;
+  justify-content: end;
+  align-items: end;
+}
+
+.min_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.se_header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header_but {
+  display: flex;
+  justify-content: space-between;
+  gap: 450px;
+  font-weight: 400 !important;
+}
+
+.top_hed {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 400 !important;
+  line-height: 28px;
+}
+
+.h5_de {
+  color: #262729;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.input_txt {
+  color: #262729;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+}
+
+.labelss {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500 !important;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.boxxBackground {
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px !important;
+  background-color: #f6f6f6;
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin-top: 7px;
+}
+
+#boxxBackgroundID:hover .labelss::after {
+  content: attr(data-full-email);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.pagination_item {
+  justify-content: end;
+  display: flex;
+  margin-top: 6px;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inputWithText {
+  width: 100%;
+  padding-right: 100px;
+}
+
+.actionText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.addText {
+  right: 65px;
+  color: var(--primary-color);
+}
+
+.deleteText {
+  right: 10px;
+  color: red;
+}
+
+.card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+ 
+}
+
+.bgcolor {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
